@@ -1,0 +1,23 @@
+{
+  "name": "n8n Classroom",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [5678],
+  "portsAttributes": {
+    "5678": {
+      "label": "n8n",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  },
+  "postStartCommand": "docker compose up -d",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
