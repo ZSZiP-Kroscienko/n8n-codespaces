@@ -7,7 +7,7 @@ services:
     environment:
       GENERIC_TIMEZONE: Europe/Warsaw
       TZ: Europe/Warsaw
-      N8N_SECURE_COOKIE: "true"
+      N8N_SECURE_COOKIE: "${N8N_SECURE_COOKIE:-true}"
       N8N_DIAGNOSTICS_ENABLED: "false"
       N8N_PERSONALIZATION_ENABLED: "false"
     volumes:
