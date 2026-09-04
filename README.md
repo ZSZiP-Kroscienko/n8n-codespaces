@@ -11,7 +11,16 @@ Repozytorium uruchamia prywatną instancję [n8n](https://n8n.io/) w GitHub Code
 
 ## Zatrzymywanie i ponowne uruchamianie
 
-- Zatrzymaj Codespace po lekcji w interfejsie GitHub, aby nie zużywać godzin.
+### Zatrzymanie po lekcji
+
+1. Otwórz [github.com/codespaces](https://github.com/codespaces).
+2. Odszukaj swój Codespace dla repozytorium `n8n-codespaces`.
+3. Kliknij przy nim menu **...**, a następnie **Stop codespace**.
+
+Nie wybieraj **Delete codespace**, ponieważ usuwa on również wolumin `n8n_data` z workflowami i poświadczeniami.
+
+### Ponowne uruchomienie
+
 - Ponowne uruchomienie tego samego Codespace zachowuje dane n8n w woluminie `n8n_data`.
 - Nowy Codespace zaczyna od pustej instancji n8n.
 
